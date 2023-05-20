@@ -1,0 +1,8 @@
+{
+  "name": "demo-di",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jgsn13/demo-di",
+  "author": "Joaquim Gregório da Silva Neto <joaquim.ibi@gmail.com>",
+  "license": "MIT"
+}
