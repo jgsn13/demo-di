@@ -1,8 +1,7 @@
-import { container, TYPES } from './di';
+import instances from './di/instances';
 import { VidaRealController } from './controllers/VidaRealController';
-import { ClienteServices } from './cases/VidaReal';
 
-const clienteServices = container.get<ClienteServices>(TYPES.ClienteServices);
+const clienteServices = instances.clienteServices;
 
 const controller = new VidaRealController(clienteServices);
 
