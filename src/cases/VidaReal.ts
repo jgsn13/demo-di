@@ -29,7 +29,7 @@ export interface ClienteServices {
 @injectable()
 export class ClienteServicesImpl implements ClienteServices {
   constructor(
-    @inject(TYPES.ClienteRepository)
+    @inject(TYPES.VidaReal.ClienteRepository)
     private readonly clienteRepository: ClienteRepository,
   ) {}
 
