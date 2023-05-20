@@ -4,7 +4,13 @@
     "lib": [
       "ESNext"
     ],
+    "types": [
+      "reflect-metadata"
+    ],
     "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "rootDir": "./src",
     "resolveJsonModule": true,
     "declaration": true,

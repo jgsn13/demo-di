@@ -1,5 +1,9 @@
-type HelloWorld = "Hello, world!";
+import { container, TYPES } from './di';
+import { VidaRealController } from './controllers/VidaRealController';
+import { ClienteServices } from './cases/VidaReal';
 
-const greet: HelloWorld = "Hello, world!";
+const clienteServices = container.get<ClienteServices>(TYPES.ClienteServices);
 
-console.log(greet);
+const controller = new VidaRealController(clienteServices);
+
+controller.index();
